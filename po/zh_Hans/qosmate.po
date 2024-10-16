@@ -1,0 +1,372 @@
+msgid ""
+msgstr ""
+
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "HFSC"
+msgstr "HFSC"
+
+msgid "CAKE"
+msgstr "CAKE"
+
+msgid "Advanced"
+msgstr "高级设置"
+
+msgid "Rules"
+msgstr "规则"
+
+msgid "Custom Rules"
+msgstr "自定义规则"
+
+msgid "Connections"
+msgstr "连接"
+
+msgid "QoSmate Settings"
+msgstr "QoSmate 设置"
+
+msgid "Configure QoSmate settings."
+msgstr "配置 QoSmate 设置。"
+
+msgid "Service Status"
+msgstr "服务状态"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Stopped (Disabled)"
+msgstr "停止（已禁用）"
+
+msgid "Service Control"
+msgstr "服务控制"
+
+msgid "Start"
+msgstr "启动"
+
+msgid "Restart"
+msgstr "重启"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Auto Setup"
+msgstr "自动设置"
+
+msgid "Start Auto Setup"
+msgstr "开始自动设置"
+
+msgid "This will run a speed test and configure QoSmate automatically."
+msgstr "这将运行速度测试并自动配置 QoSmate。"
+
+msgid "Gaming Device IP (optional)"
+msgstr "游戏设备 IP（可选）"
+
+msgid "Invalid speed test results. Please try again or set values manually."
+msgstr "无效的速度测试结果。请重试或手动设置值。"
+
+msgid "QoSmate settings updated and service restarted."
+msgstr "QoSmate 设置已更新，服务已重启。"
+
+msgid "Failed to start QoSmate"
+msgstr "启动 QoSmate 失败"
+
+msgid "Failed to restart QoSmate"
+msgstr "重启 QoSmate 失败"
+
+msgid "Failed to stop QoSmate"
+msgstr "停止 QoSmate 失败"
+
+msgid "Version Information"
+msgstr "版本信息"
+
+msgid "Current Version"
+msgstr "当前版本"
+
+msgid "Latest Version"
+msgstr "最新版本"
+
+msgid "A new version is available!"
+msgstr "有新版本可用！"
+
+msgid "QoSmate is up to date."
+msgstr "QoSmate 已是最新。"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Enable or disable qosmate"
+msgstr "启用或禁用 qosmate"
+
+msgid "WAN Interface"
+msgstr "WAN 接口"
+
+msgid "Download Rate (kbps)"
+msgstr "下载速度 (kbps)"
+
+msgid "Upload Rate (kbps)"
+msgstr "上传速度 (kbps)"
+
+msgid "Root Queueing Discipline"
+msgstr "根队列管理策略"
+
+msgid "Please set non-zero values manually."
+msgstr "请手动设置非零值。"
+
+msgid "QoSmate HFSC Settings"
+msgstr "QoSmate HFSC 设置"
+
+msgid "Configure HFSC settings for QoSmate."
+msgstr "配置 QoSmate 的 HFSC 设置。"
+
+msgid "HFSC Settings"
+msgstr "HFSC 设置"
+
+msgid "Link Type"
+msgstr "链路类型"
+
+msgid "Select the link type"
+msgstr "选择链路类型"
+
+msgid "Overhead"
+msgstr "开销"
+
+msgid "Set the overhead"
+msgstr "设置开销"
+
+msgid "Default: 44"
+msgstr "默认值: 44"
+
+msgid "Game Queue Discipline"
+msgstr "游戏队列机制"
+
+msgid "Queueing method for traffic classified as realtime"
+msgstr "分类为实时流量的队列方法"
+
+msgid "Game Upload (kbps)"
+msgstr "游戏上传速率（kbps）"
+
+msgid "Bandwidth reserved for realtime upload traffic"
+msgstr "为实时上传流量保留的带宽"
+
+msgid "Default: 15% of UPRATE + 400"
+msgstr "默认值: UPRATE 的 15% + 400"
+
+msgid "Game Download (kbps)"
+msgstr "游戏下载速率（kbps）"
+
+msgid "Bandwidth reserved for realtime download traffic"
+msgstr "为实时下载流量保留的带宽"
+
+msgid "Non-Game Queue Discipline"
+msgstr "非游戏队列机制"
+
+msgid "Select the queueing discipline for non-realtime traffic"
+msgstr "为非实时流量选择队列机制"
+
+msgid "Non-Game QDisc Options"
+msgstr "非游戏队列选项"
+
+msgid "Cake options for non-realtime queueing discipline"
+msgstr "非实时队列机制的 Cake 选项"
+
+msgid "Default: besteffort ack-filter"
+msgstr "默认值: besteffort ack-filter"
+
+msgid "Max Delay (ms)"
+msgstr "最大延迟（毫秒）"
+
+msgid "Target max delay for realtime packets after burst (pfifo, bfifo, red)"
+msgstr "突发后实时数据包的目标最大延迟 (pfifo, bfifo, red)"
+
+msgid "PFIFO Min"
+msgstr "PFIFO 最小值"
+
+msgid "Minimum packet count for PFIFO queue"
+msgstr "PFIFO 队列的最小数据包数"
+
+msgid "Avg Packet Size (B)"
+msgstr "平均数据包大小（字节）"
+
+msgid "Used with PFIFOMIN to calculate PFIFO limit"
+msgstr "与 PFIFOMIN 一起使用以计算 PFIFO 限制"
+
+msgid "NETEM Delay (ms)"
+msgstr "NETEM 延迟（毫秒）"
+
+msgid "NETEM delay in milliseconds"
+msgstr "NETEM 的延迟，以毫秒为单位"
+
+msgid "NETEM Jitter (ms)"
+msgstr "NETEM 抖动（毫秒）"
+
+msgid "NETEM jitter in milliseconds"
+msgstr "NETEM 的抖动，以毫秒为单位"
+
+msgid "NETEM Distribution"
+msgstr "NETEM 分布"
+
+msgid "NETEM delay distribution"
+msgstr "NETEM 延迟分布"
+
+msgid "Packet Loss Percentage"
+msgstr "数据包丢失百分比"
+
+msgid "Percentage of packet loss"
+msgstr "数据包丢失百分比"
+
+msgid "Failed to save settings or update QoSmate service: "
+msgstr "保存设置或更新 QoSmate 服务失败："
+
+msgid "QoSmate CAKE Settings"
+msgstr "QoSmate CAKE 设置"
+
+msgid "Configure CAKE settings for QoSmate."
+msgstr "配置 QoSmate 的 CAKE 设置。"
+
+msgid "CAKE Settings"
+msgstr "CAKE 设置"
+
+msgid "Common Link Presets"
+msgstr "常见链路预设"
+
+msgid "Select common link presets"
+msgstr "选择常见链路预设"
+
+msgid "Raw (No overhead compensation)"
+msgstr "原始（无开销补偿）"
+
+msgid "Conservative (48 bytes overhead + ATM)"
+msgstr "保守（48 字节开销 + ATM）"
+
+msgid "Ethernet"
+msgstr "以太网"
+
+msgid "DOCSIS cable"
+msgstr "DOCSIS 电缆"
+
+msgid "PPPoA VC-Mux"
+msgstr "PPPoA VC-Mux"
+
+msgid "PPPoA LLC"
+msgstr "PPPoA LLC"
+
+msgid "PPPoE VC-Mux"
+msgstr "PPPoE VC-Mux"
+
+msgid "PPPoE LLC-SNAP"
+msgstr "PPPoE LLC-SNAP"
+
+msgid "Bridged VC-Mux"
+msgstr "桥接 VC-Mux"
+
+msgid "Bridged LLC-SNAP"
+msgstr "桥接 LLC-SNAP"
+
+msgid "IPoA VC-Mux"
+msgstr "IPoA VC-Mux"
+
+msgid "IPoA LLC-SNAP"
+msgstr "IPoA LLC-SNAP"
+
+msgid "PPPoE PTM"
+msgstr "PPPoE PTM"
+
+msgid "Bridged PTM"
+msgstr "桥接 PTM"
+
+msgid "Default: based on preset"
+msgstr "默认值：基于预设"
+
+msgid "MPU"
+msgstr "MPU"
+
+msgid "Minimum packet size CAKE will account for"
+msgstr "CAKE 将考虑的最小数据包大小"
+
+msgid "Link Compensation"
+msgstr "链路补偿"
+
+msgid "Set the link compensation"
+msgstr "设置链路补偿"
+
+msgid "Ether VLAN Keyword"
+msgstr "Ether VLAN 关键字"
+
+msgid "Set the Ether VLAN keyword"
+msgstr "设置 Ether VLAN 关键字"
+
+msgid "Priority Queue (Ingress)"
+msgstr "优先级队列（入口）"
+
+msgid "Sets CAKE's diffserv mode for incoming traffic"
+msgstr "为入站流量设置 CAKE 的 diffserv 模式"
+
+msgid "Diffserv 3-tier priority"
+msgstr "Diffserv 3 级优先级"
+
+msgid "Diffserv 4-tier priority"
+msgstr "Diffserv 4 级优先级"
+
+msgid "Diffserv 8-tier priority"
+msgstr "Diffserv 8 级优先级"
+
+msgid "Priority Queue (Egress)"
+msgstr "优先级队列（出口）"
+
+msgid "Sets CAKE's diffserv mode for outgoing traffic"
+msgstr "为出站流量设置 CAKE 的 diffserv 模式"
+
+msgid "Max Rate (kbps)"
+msgstr "最大速率（kbps）"
+
+msgid "Maximum bandwidth allocated for traffic"
+msgstr "分配给流量的最大带宽"
+
+msgid "Disable Automatic Setting"
+msgstr "禁用自动设置"
+
+msgid "Disable auto-setting of bandwidth rates"
+msgstr "禁用带宽速率的自动设置"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Update QoSmate"
+msgstr "更新 QoSmate"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save changes to QoSmate settings."
+msgstr "保存对 QoSmate 设置的更改。"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Reset QoSmate settings to default."
+msgstr "将 QoSmate 设置重置为默认。"
+
+msgid "QoSmate Log"
+msgstr "QoSmate 日志"
+
+msgid "View QoSmate logs."
+msgstr "查看 QoSmate 日志。"
+
+msgid "QoSmate Help"
+msgstr "QoSmate 帮助"
+
+msgid "Get help for configuring QoSmate."
+msgstr "获取配置 QoSmate 的帮助。"
+
+msgid "Close"
+msgstr "关闭"
