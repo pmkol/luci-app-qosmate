@@ -1,6 +1,3 @@
-msgid ""
-msgstr ""
-
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
@@ -104,14 +101,26 @@ msgstr "启用或禁用 qosmate"
 msgid "WAN Interface"
 msgstr "WAN 接口"
 
+msgid "Select the WAN interface"
+msgstr "选择WAN 接口"
+
 msgid "Download Rate (kbps)"
 msgstr "下载速度 (kbps)"
+
+msgid "Set the download rate in kbps"
+msgstr "设置下载速率（kbps）"
 
 msgid "Upload Rate (kbps)"
 msgstr "上传速度 (kbps)"
 
+msgid "Set the upload rate in kbps"
+msgstr "设置上传速率（kbps）"
+
 msgid "Root Queueing Discipline"
 msgstr "根队列管理策略"
+
+msgid "Select the root queueing discipline"
+msgstr "选择根队列管理策略"
 
 msgid "Please set non-zero values manually."
 msgstr "请手动设置非零值。"
@@ -278,6 +287,9 @@ msgstr "PPPoE PTM"
 msgid "Bridged PTM"
 msgstr "桥接 PTM"
 
+msgid "Set the overhead"
+msgstr "设置开销"
+
 msgid "Default: based on preset"
 msgstr "默认值：基于预设"
 
@@ -320,53 +332,407 @@ msgstr "优先级队列（出口）"
 msgid "Sets CAKE's diffserv mode for outgoing traffic"
 msgstr "为出站流量设置 CAKE 的 diffserv 模式"
 
-msgid "Max Rate (kbps)"
-msgstr "最大速率（kbps）"
+msgid "Host Isolation"
+msgstr "主机隔离"
 
-msgid "Maximum bandwidth allocated for traffic"
-msgstr "分配给流量的最大带宽"
+msgid "Applies fairness first by host, then by flow(dual-srchost/dual-dsthost)"
+msgstr "首先按主机，然后按流量应用公平性 (dual-srchost/dual-dsthost)"
 
-msgid "Disable Automatic Setting"
-msgstr "禁用自动设置"
+msgid "NAT (Ingress)"
+msgstr "NAT（入口）"
 
-msgid "Disable auto-setting of bandwidth rates"
-msgstr "禁用带宽速率的自动设置"
+msgid "Enable NAT lookup for ingress"
+msgstr "为入站启用 NAT 查找"
 
-msgid "Enabled"
-msgstr "启用"
+msgid "NAT (Egress)"
+msgstr "NAT（出口）"
+
+msgid "Enable NAT lookup for egress"
+msgstr "为出站启用 NAT 查找"
+
+msgid "ACK Filter (Egress)"
+msgstr "ACK 过滤器（出口）"
+
+msgid "Set ACK filter for egress. Auto enables filtering if download/upload ratio ≥ 15."
+msgstr "为出口设置 ACK 过滤器。如果下载/上传比率≥15，将自动启用过滤。"
 
 msgid "Auto"
 msgstr "自动"
 
-msgid "Update"
-msgstr "更新"
+msgid "Enable"
+msgstr "启用"
 
-msgid "Update QoSmate"
-msgstr "更新 QoSmate"
+msgid "Disable"
+msgstr "禁用"
 
-msgid "Save"
-msgstr "保存"
+msgid "RTT"
+msgstr "RTT"
 
-msgid "Save changes to QoSmate settings."
-msgstr "保存对 QoSmate 设置的更改。"
+msgid "Set the Round Trip Time"
+msgstr "设置往返时间"
 
-msgid "Reset"
-msgstr "重置"
+msgid "Autorate (Ingress)"
+msgstr "自动速率（入口）"
 
-msgid "Reset QoSmate settings to default."
-msgstr "将 QoSmate 设置重置为默认。"
+msgid "Enable autorate for ingress"
+msgstr "为入站启用自动速率"
 
-msgid "QoSmate Log"
-msgstr "QoSmate 日志"
+msgid "Extra Parameters (Ingress)"
+msgstr "额外参数（入口）"
 
-msgid "View QoSmate logs."
-msgstr "查看 QoSmate 日志。"
+msgid "Set extra parameters for ingress"
+msgstr "设置入站的额外参数"
 
-msgid "QoSmate Help"
-msgstr "QoSmate 帮助"
+msgid "Extra Parameters (Egress)"
+msgstr "额外参数（出口）"
 
-msgid "Get help for configuring QoSmate."
-msgstr "获取配置 QoSmate 的帮助。"
+msgid "Set extra parameters for egress"
+msgstr "设置出站的额外参数"
 
-msgid "Close"
-msgstr "关闭"
+msgid "Failed to save settings or update QoSmate service: "
+msgstr "保存设置或更新 QoSmate 服务失败："
+
+msgid "QoSmate Advanced Settings"
+msgstr "QoSmate 高级设置"
+
+msgid "Configure advanced settings for QoSmate."
+msgstr "配置 QoSmate 的高级设置。"
+
+msgid "Advanced Settings"
+msgstr "高级设置"
+
+msgid "Preserve Config Files"
+msgstr "保留配置文件"
+
+msgid "Preserve configuration files during system upgrade"
+msgstr "系统升级时保留配置文件"
+
+msgid "Wash DSCP Egress"
+msgstr "清除 DSCP（出口）"
+
+msgid "Sets DSCP to CS0 for outgoing packets after classification"
+msgstr "分类后将出口数据包的 DSCP 设置为 CS0"
+
+msgid "Wash DSCP Ingress"
+msgstr "清除 DSCP（入口）"
+
+msgid "Sets DSCP to CS0 for incoming packets before classification"
+msgstr "分类前将入口数据包的 DSCP 设置为 CS0"
+
+msgid "Bandwidth Max Ratio"
+msgstr "带宽最大比例"
+
+msgid "Max download/upload ratio to prevent upstream congestion"
+msgstr "最大下载/上传比例，以防止上游拥塞"
+
+msgid "Default: 20"
+msgstr "默认值：20"
+
+msgid "ACK Rate"
+msgstr "ACK 速率"
+
+msgid "Sets rate limit for TCP ACKs, helps prevent ACK flooding / set to 0 to disable ACK rate limit"
+msgstr "设置 TCP ACK 的速率限制，帮助防止 ACK 泛洪 / 设为 0 以禁用 ACK 速率限制"
+
+msgid "Default: 5% of UPRATE"
+msgstr "默认值：上传速率的 5%"
+
+msgid "Enable UDP Rate Limit"
+msgstr "启用 UDP 速率限制"
+
+msgid "Downgrades UDP traffic exceeding 450 pps to lower priority"
+msgstr "将超过 450 pps 的 UDP 流量降级为低优先级"
+
+msgid "Boost Low-Volume TCP Traffic"
+msgstr "提升小流量 TCP 流量"
+
+msgid "Upgrade DSCP to AF42 for TCP connections with less than 150 packets per second. This can improve responsiveness for interactive TCP services like SSH, web browsing, and instant messaging."
+msgstr "将每秒小于 150 个数据包的 TCP 连接的 DSCP 升级到 AF42。这样可以提高 SSH、网页浏览和即时消息等交互式 TCP 服务的响应速度。"
+
+msgid "UDP Bulk Ports"
+msgstr "UDP 批量端口"
+
+msgid "Specify UDP ports for bulk traffic"
+msgstr "指定用于批量流量的 UDP 端口"
+
+msgid "Default: none"
+msgstr "默认值：无"
+
+msgid "TCP Bulk Ports"
+msgstr "TCP 批量端口"
+
+msgid "Specify TCP ports for bulk traffic"
+msgstr "指定用于批量流量的 TCP 端口"
+
+msgid "TCP MSS"
+msgstr "TCP MSS"
+
+msgid "Maximum Segment Size for TCP connections. This setting is only active when the upload or download bandwidth is less than 3000 kbit/s. Leave empty to use the default value."
+msgstr "TCP 连接的最大段大小。此设置仅在上传或下载带宽小于 3000 kbit/s 时生效。留空将使用默认值。"
+
+msgid "Default: 536"
+msgstr "默认值：536"
+
+msgid "Failed to save settings or update QoSmate service: "
+msgstr "保存设置或更新 QoSmate 服务失败："
+
+msgid "QoSmate Rules"
+msgstr "QoSmate 规则"
+
+msgid "Configure QoS rules for marking packets with DSCP values."
+msgstr "配置 QoS 规则以标记具有 DSCP 值的数据包。"
+
+msgid "Rules"
+msgstr "规则"
+
+msgid "General Settings"
+msgstr "常规设置"
+
+msgid "DSCP Mapping"
+msgstr "DSCP 映射"
+
+msgid "HFSC Mapping:"
+msgstr "HFSC 映射："
+
+msgid "High Priority [Realtime] (1:11)"
+msgstr "高优先级 [实时] (1:11)"
+
+msgid "EF, CS5, CS6, CS7"
+msgstr "EF, CS5, CS6, CS7"
+
+msgid "Fast Non-Realtime (1:12)"
+msgstr "快速非实时 (1:12)"
+
+msgid "CS4, AF41, AF42"
+msgstr "CS4, AF41, AF42"
+
+msgid "Normal (1:13)"
+msgstr "普通 (1:13)"
+
+msgid "CS0"
+msgstr "CS0"
+
+msgid "Low Priority (1:14)"
+msgstr "低优先级 (1:14)"
+
+msgid "CS2"
+msgstr "CS2"
+
+msgid "Bulk (1:15)"
+msgstr "批量 (1:15)"
+
+msgid "CS1"
+msgstr "CS1"
+
+msgid "CAKE Mapping (diffserv4):"
+msgstr "CAKE 映射 (diffserv4)："
+
+msgid "Voice (Highest Priority)"
+msgstr "语音 (最高优先级)"
+
+msgid "CS7, CS6, EF, VA, CS5, CS4"
+msgstr "CS7, CS6, EF, VA, CS5, CS4"
+
+msgid "Video"
+msgstr "视频"
+
+msgid "CS3, AF4x, AF3x, CS2, TOS1"
+msgstr "CS3, AF4x, AF3x, CS2, TOS1"
+
+msgid "Best Effort"
+msgstr "最佳努力"
+
+msgid "CS0, AF1x, AF2x, TOS0"
+msgstr "CS0, AF1x, AF2x, TOS0"
+
+msgid "Bulk (Lowest Priority)"
+msgstr "批量 (最低优先级)"
+
+msgid "CS1, LE"
+msgstr "CS1, LE"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Protocol"
+msgstr "协议"
+
+msgid "TCP"
+msgstr "TCP"
+
+msgid "UDP"
+msgstr "UDP"
+
+msgid "ICMP"
+msgstr "ICMP"
+
+msgid "Any"
+msgstr "任意"
+
+msgid "Source IP"
+msgstr "源 IP"
+
+msgid "any"
+msgstr "任意"
+
+msgid "Invalid IP address or hostname"
+msgstr "无效的 IP 地址或主机名"
+
+msgid "Source port"
+msgstr "源端口"
+
+msgid "Invalid port or port range"
+msgstr "无效的端口或端口范围"
+
+msgid "Destination IP"
+msgstr "目的 IP"
+
+msgid "Destination port"
+msgstr "目的端口"
+
+msgid "DSCP Class"
+msgstr "DSCP 类别"
+
+msgid "EF - Expedited Forwarding (46)"
+msgstr "EF - 加速转发 (46)"
+
+msgid "CS5 (40)"
+msgstr "CS5 (40)"
+
+msgid "CS6 (48)"
+msgstr "CS6 (48)"
+
+msgid "CS7 (56)"
+msgstr "CS7 (56)"
+
+msgid "CS4 (32)"
+msgstr "CS4 (32)"
+
+msgid "AF41 (34)"
+msgstr "AF41 (34)"
+
+msgid "AF42 (36)"
+msgstr "AF42 (36)"
+
+msgid "CS2 (16)"
+msgstr "CS2 (16)"
+
+msgid "CS1 (8)"
+msgstr "CS1 (8)"
+
+msgid "CS0 - Best Effort (0)"
+msgstr "CS0 - 最佳努力 (0)"
+
+msgid "Enable counter"
+msgstr "启用计数器"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Failed to save settings or update QoSmate service: "
+msgstr "保存设置或更新 QoSmate 服务失败："
+
+msgid "Custom rules have been saved and applied."
+msgstr "自定义规则已保存并应用。"
+
+msgid "Failed to save settings or restart QoSmate:"
+msgstr "无法保存设置或重启 QoSmate："
+
+msgid "QoSmate Custom Rules"
+msgstr "QoSmate 自定义规则"
+
+msgid "Define custom nftables rules for advanced traffic control."
+msgstr "定义用于高级流量控制的自定义 nftables 规则。"
+
+msgid "Erase Custom Rules"
+msgstr "清除自定义规则"
+
+msgid "Are you sure you want to erase all custom rules? This action cannot be undone."
+msgstr "确定要清除所有自定义规则吗？此操作无法撤销。"
+
+msgid "Custom rules have been erased and changes applied."
+msgstr "自定义规则已清除并应用更改。"
+
+msgid "Failed to erase custom rules or apply changes:"
+msgstr "无法清除自定义规则或应用更改："
+
+msgid "Custom nftables Rules"
+msgstr "自定义 nftables 规则"
+
+msgid "Enter your custom nftables rules here. The "table inet qosmate_custom { ... }" wrapper will be added automatically."
+msgstr "在此处输入您的自定义 nftables 规则。 \"table inet qosmate_custom { ... }\" 包装器将自动添加。"
+
+msgid "Custom rules validation successful."
+msgstr "自定义规则验证成功。"
+
+msgid "Custom rules validation failed. Please check the validation result below."
+msgstr "自定义规则验证失败。请检查下方的验证结果。"
+
+msgid "Validation Result"
+msgstr "验证结果"
+
+msgid "Validate Rules"
+msgstr "验证规则"
+
+msgid "Error: Could not find custom rules textarea"
+msgstr "错误：找不到自定义规则文本区域"
+
+msgid "Validating Rules"
+msgstr "正在验证规则"
+
+msgid "Please wait while the rules are being validated..."
+msgstr "请等待规则验证... "
+
+msgid "Finalizing validation results, please wait..."
+msgstr "正在完成验证结果，请稍候..."
+
+msgid "Error during validation:"
+msgstr "验证过程中出错："
+
+msgid "Example rules:"
+msgstr "示例规则："
+
+msgid "Warning: Incorrect rules can disrupt network functionality. Use with caution."
+msgstr "警告：不正确的规则可能会破坏网络功能。请谨慎使用。"
+
+msgid "QoSmate Connections"
+msgstr "QoSmate 连接"
+
+msgid "Filter by IP, IP:Port, Port, Protocol or DSCP"
+msgstr "通过 IP、IP:端口、端口、协议或 DSCP 过滤"
+
+msgid "Zoom:"
+msgstr "缩放："
+
+msgid "In: "
+msgstr "入站："
+
+msgid "Out: "
+msgstr "出站："
+
+msgid "Packets"
+msgstr "数据包"
+
+msgid "Avg PPS"
+msgstr "平均 PPS"
+
+msgid "Max PPS"
+msgstr "最大 PPS"
+
+msgid "Avg BPS"
+msgstr "平均 BPS"
+
+msgid "Protocol"
+msgstr "协议"
+
+msgid "Source"
+msgstr "来源"
+
+msgid "Destination"
+msgstr "目的地"
+
+msgid "DSCP"
+msgstr "DSCP"
+
+msgid "Bytes"
+msgstr "字节"
