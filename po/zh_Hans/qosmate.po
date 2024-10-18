@@ -5,6 +5,9 @@
 msgid "Settings"
 msgstr "设置"
 
+msgid "Basic Settings"
+msgstr "基础设置"
+
 msgid "HFSC"
 msgstr "HFSC"
 
@@ -35,8 +38,8 @@ msgstr "服务状态"
 msgid "Running"
 msgstr "运行中"
 
-msgid "Stopped (Disabled)"
-msgstr "停止（已禁用）"
+msgid "Stopped"
+msgstr "已停止"
 
 msgid "Service Control"
 msgstr "服务控制"
@@ -74,11 +77,20 @@ msgstr "启动 QoSmate 失败"
 msgid "Failed to restart QoSmate"
 msgstr "重启 QoSmate 失败"
 
+msgid "QoSmate stopped"
+msgstr "QoSmate 已停止"
+
+msgid "QoSmate started"
+msgstr "QoSmate 已启用"
+
 msgid "Failed to stop QoSmate"
 msgstr "停止 QoSmate 失败"
 
 msgid "Version Information"
 msgstr "版本信息"
+
+msgid "Unable to fetch"
+msgstr "获取失败"
 
 msgid "Current Version"
 msgstr "当前版本"
@@ -90,19 +102,22 @@ msgid "A new version is available!"
 msgstr "有新版本可用！"
 
 msgid "QoSmate is up to date."
-msgstr "QoSmate 已是最新。"
+msgstr "QoSmate 已是最新"
+
+msgid "Unable to check for updates."
+msgstr "检查更新失败"
 
 msgid "Enable"
 msgstr "启用"
 
 msgid "Enable or disable qosmate"
-msgstr "启用或禁用 qosmate"
+msgstr "启用或禁用 QoSmate"
 
 msgid "WAN Interface"
 msgstr "WAN 接口"
 
 msgid "Select the WAN interface"
-msgstr "选择WAN 接口"
+msgstr "选择 WAN 接口"
 
 msgid "Download Rate (kbps)"
 msgstr "下载速度 (kbps)"
@@ -162,7 +177,10 @@ msgid "Bandwidth reserved for realtime upload traffic"
 msgstr "为实时上传流量保留的带宽"
 
 msgid "Default: 15% of UPRATE + 400"
-msgstr "默认值: UPRATE 的 15% + 400"
+msgstr "默认值: 上传速度的 15% + 400"
+
+msgid "Default: 15% of DOWNRATE + 400"
+msgstr "默认值: 下载速度的 15% + 400"
 
 msgid "Game Download (kbps)"
 msgstr "游戏下载速率（kbps）"
@@ -291,7 +309,7 @@ msgid "Set the overhead"
 msgstr "设置开销"
 
 msgid "Default: based on preset"
-msgstr "默认值：基于预设"
+msgstr "默认值: 基于预设"
 
 msgid "MPU"
 msgstr "MPU"
@@ -367,6 +385,9 @@ msgstr "禁用"
 
 msgid "RTT"
 msgstr "RTT"
+
+msgid "Default: auto"
+msgstr "默认值：自动"
 
 msgid "Set the Round Trip Time"
 msgstr "设置往返时间"
@@ -466,6 +487,18 @@ msgstr "指定用于批量流量的 TCP 端口"
 
 msgid "TCP MSS"
 msgstr "TCP MSS"
+
+msgid "Nftables Hook"
+msgstr "Nftables 钩子"
+
+msgid "Select the nftables hook point for the dscptag chain"
+msgstr "为 dscptag 链选择 nftables 钩子点"
+
+msgid "Nftables Priority"
+msgstr "Nftables 优先级"
+
+msgid "Set the priority for the nftables chain. Lower values are processed earlier. Default is 0 | mangle is -150."
+msgstr "为 nftables 链选择优先级。数值越低，处理优先级越高。默认为0，mangle表为 -150。"
 
 msgid "Maximum Segment Size for TCP connections. This setting is only active when the upload or download bandwidth is less than 3000 kbit/s. Leave empty to use the default value."
 msgstr "TCP 连接的最大段大小。此设置仅在上传或下载带宽小于 3000 kbit/s 时生效。留空将使用默认值。"
@@ -644,6 +677,9 @@ msgstr "QoSmate 自定义规则"
 msgid "Define custom nftables rules for advanced traffic control."
 msgstr "定义用于高级流量控制的自定义 nftables 规则。"
 
+msgid "Erase Rules"
+msgstr "清除规则"
+
 msgid "Erase Custom Rules"
 msgstr "清除自定义规则"
 
@@ -659,8 +695,8 @@ msgstr "无法清除自定义规则或应用更改："
 msgid "Custom nftables Rules"
 msgstr "自定义 nftables 规则"
 
-msgid "Enter your custom nftables rules here. The "table inet qosmate_custom { ... }" wrapper will be added automatically."
-msgstr "在此处输入您的自定义 nftables 规则。 \"table inet qosmate_custom { ... }\" 包装器将自动添加。"
+msgid "Enter your custom nftables rules here. The \"table inet qosmate_custom { ... }\" wrapper will be added automatically."
+msgstr "在此处输入您的自定义 nftables 规则。\"table inet qosmate_custom { ... }\" 包装器将被自动添加。"
 
 msgid "Custom rules validation successful."
 msgstr "自定义规则验证成功。"
@@ -671,8 +707,17 @@ msgstr "自定义规则验证失败。请检查下方的验证结果。"
 msgid "Validation Result"
 msgstr "验证结果"
 
+msgid "No validation performed yet"
+msgstr "还未进行任何验证"
+
 msgid "Validate Rules"
 msgstr "验证规则"
+
+msgid "Validate"
+msgstr "验证"
+
+msgid "Rules Information"
+msgstr "规则信息"
 
 msgid "Error: Could not find custom rules textarea"
 msgstr "错误：找不到自定义规则文本区域"
@@ -692,8 +737,11 @@ msgstr "验证过程中出错："
 msgid "Example rules:"
 msgstr "示例规则："
 
-msgid "Warning: Incorrect rules can disrupt network functionality. Use with caution."
-msgstr "警告：不正确的规则可能会破坏网络功能。请谨慎使用。"
+msgid "Warning:"
+msgstr "警告: "
+
+msgid "Incorrect rules can disrupt network functionality. Use with caution."
+msgstr "不正确的规则可能会破坏网络功能。请谨慎使用。"
 
 msgid "QoSmate Connections"
 msgstr "QoSmate 连接"
